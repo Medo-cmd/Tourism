@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/c8aa03fd44.js" crossorigin="anonymous"></script>
+
+    <title>DELTA</title>
+</head>
+<body>
+    <!--NavBar-->
+        
+    <div class="topnav" id="myTopnav">
+        <a href="#" id="nav_brand">
+        <img src="images/delt.1.png" alt="DELTA">
+        <span>DELTA</span> 
+        </a>
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Service Center</a>
+        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+        <div class="dropdown">
+            <button class="dropbtn"onclick="window.location.href='/distanation.html'">
+                <i class="fa fa-fw fa-plane-departure"></i>
+                Destination
+            </button>
+        </div>
+        <div class="dropdown active">
+          <button class="dropbtn">
+            <i class="fa fa-fw fa-utensils"></i>
+            Menu
+          </button>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myToggle_btn()"><i class="fa fa-align-justify"></i></a>
+    </div>
+<!--End of the Navigation-->
+<div class="food_menu">
+        <img src="images/food_logo.jpg"alt="logo">
+        
+        <h1>Welcome to our Food Menu Page </h1>
+</div>
+
+<!--EAT TIMES & KINDS SECTION-->
+<div class="filtter">
+    <button onclick="showAll()">
+        All
+        <i class="bi bi-chevron-double-right"></i>
+    </button>
+    <button id="breakfast_btn" onclick="showBrakfast()">
+        Breakfast
+        <i class="bi bi-chevron-double-right"></i>
+    </button>
+    <button id="lunch_btn" onclick="showLunch()">
+        Lunch
+        <i class="bi bi-chevron-double-right"></i>
+    </button>
+    <button id="dinner_btn" onclick="showDinner()">
+        Dinner
+        <i class="bi bi-chevron-double-right"></i>
+    </button>
+</div>
+
+<!--Defult background section-->
+<div id="main_section" style="width: 70%;float: right; height: auto;">
+    <img src="https://shop.mann-hummel.com/media/wysiwyg/MH_Restaurant_1.jpg" 
+    alt="background_foods" style="width: 100%;height:auto;"
+    >
+    <h3 style="text-align: center;
+    font-family: 'Amatic SC', cursive;
+font-family: 'Dancing Script', cursive;
+
+    ">
+        Lots of little things can make a big difference. 
+        We will tell you which suppliers we work with, 
+        where our ingredients come from and how we ensure 
+        that the best quality is served in our restaurants every day.
+    </h3>
+    <button 
+    style="width: 20%;
+    background-color: rgb(209, 209, 7);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    left: 40%;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    ">
+        Check it out!
+    </button>
+</div>
+<!--break fast Menu-->
+<div class="parent" id="breakfast" style="display: none;">
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1362_thumb.jpg?$Category_Desktop$" 
+    alt="Butter_croassiant">
+    <h5>Butter croissant
+        <br>
+        <span>Prise :1.00 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+    
+    
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1620_thumb.jpg?$Category_Desktop$"
+     alt="jam">
+     <h5>Strawberry jam 25g
+         <br>
+         <span>Prise :1.00 $</span>
+         <br>
+         <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1628_thumb.jpg?$Category_Desktop$"
+     alt="nutella">
+     <h5>nutella 15g
+        <br>
+        <span>Prise :1.00 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+   </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7193_thumb.jpg?$Category_Desktop$"
+     alt="latte">
+     <h5>Latte Macchiato Grande
+        <br>
+        <span>Prise :2.00 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+   </h5>
+</div>
+<div>
+<img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1634_thumb.jpg?$Category_Desktop$"
+ alt="Butter">
+    <h5>Butter 10g
+        <br>
+        <span>Prise :0.85 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+   </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7254_thumb.jpg?$Category_Desktop$"
+     alt="juse">
+     <h5>Orange juice 0.25l
+        <br>
+        <span>Prise :1.25 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+   </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1301_thumb.jpg?$Category_Desktop$"
+     alt="toast">
+     <h5>Toast & Cheese
+        <br>
+        <span>Prise :2.35 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1531_thumb.jpg?$Category_Desktop$"
+     alt="chicken_Burger">
+    <h5>Chicken Burger
+        <br>
+        <span>Prise :3.50 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7158_thumb.jpg?$Category_Desktop$"
+     alt="koffee">
+     <h5>Black Koffee
+        <br>
+        <span>Prise :1.00 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7184_thumb.jpg?$Category_Desktop$"
+     alt="cappuccino">
+     <h5>Cappuccino
+        <br>
+        <span>Prise :1.00 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+   <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7159_thumb.jpg?$Category_Desktop$"
+    alt="cafe_grand">
+    <h5>Koffee Grande
+        <br>
+        <span>Prise :1.50 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7191_thumb.jpg?$Category_Desktop$"
+     alt="cappuccino_grande">
+     <h5>Cappuccino Grande
+        <br>
+        <span>Prise :1.50 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7187_thumb.jpg?$Category_Desktop$"
+     alt="hot_choklate">
+    <h5>Hot Choklate
+        <br>
+        <span>Prise :1.70 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7282_thumb.jpg?$Category_Desktop$"
+     alt="green_Tee">
+    <h5>Green Tee
+        <br>
+        <span>Prise :0.70 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7281_thumb.jpg?$Category_Desktop$"
+     alt="black_tee">
+     <h5>Black Tee
+        <br>
+        <span>Prise :0.70 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+<div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7283_thumb.jpg?$Category_Desktop$"
+     alt="mint_tee">
+     <h5>Fresh Mint Tee
+        <br>
+        <span>Prise :0.70 $</span>
+        <br>
+        <button>add to Cart <i class="bi bi-cart3"></i></button>
+    </h5>
+</div>
+</div>
+
+<!--end of breakfast Menue-->
+<!--start of lunch Menu-->
+<div class="parent" id="lunch" style="display: none;">
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/5608_thumb.jpg?$Category_Desktop$" 
+        alt="
+        Homestyle Crispy Chicken">
+        <h5>
+            Homestyle Crispy Chicken
+            <br>
+            <span>Prise :4.00 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+        
+        
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/5620_thumb.jpg?$Category_Desktop$"
+         alt="
+         Grand BBQ Cheese">
+         <h5>
+            Grand BBQ Cheese
+             <br>
+             <span>Prise :5.00 $</span>
+             <br>
+             <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/6297_thumb.jpg?$Category_Desktop$"
+         alt="McWrap Chicken Sweet-Chili">
+         <h5>McWrap Chicken Sweet-Chili
+            <br>
+            <span>Prise :4.00 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+       </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/3874_thumb.jpg?$Category_Desktop$"
+         alt="Big Chicken Salat">
+         <h5>Big Chicken Salat
+            <br>
+            <span>Prise :2.80 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+       </h5>
+    </div>
+    <div>
+    <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2221_thumb.jpg?$Category_Desktop$"
+     alt="McDouble® Chili Cheese">
+        <h5>Double® Chili Cheese
+            <br>
+            <span>Prise :1.85 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+       </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2570_thumb.jpg?$Category_Desktop$"
+         alt="
+         Veganburger TS">
+         <h5>
+            Vegetable burger TS
+            <br>
+            <span>Prise :1.25 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+       </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2210_thumb.jpg?$Category_Desktop$"
+         alt="
+         Ketchup 20ml">
+         <h5>
+            Ketchup 20ml
+            <br>
+            <span>Prise :0.20 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1531_thumb.jpg?$Category_Desktop$"
+         alt="chicken_Burger">
+        <h5>Chicken Burger
+            <br>
+            <span>Prise :3.50 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2305_thumb.jpg?$Category_Desktop$"
+         alt="
+         McChicken® Classic">
+         <h5>
+            McChicken® Classic
+            <br>
+            <span>Prise :4.00 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/3800_thumb.jpg?$Category_Desktop$"
+         alt="
+         Snack Salad Classic">
+         <h5>
+            Snack Salad Classic
+            <br>
+            <span>Prise :2.00 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+       <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2220_thumb.jpg?$Category_Desktop$"
+        alt="
+        Mayonnaise 20ml">
+        <h5>
+            Mayonnaise 20ml
+            <br>
+            <span>Prise :0.50 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/3578_thumb.jpg?$Category_Desktop$"
+         alt="
+         Balsamico Dressing 30ml">
+         <h5>
+            Balsamico Dressing 30ml
+            <br>
+            <span>Prise :0.55 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/3580_thumb.jpg?$Category_Desktop$"
+         alt="
+         Caesar Dressing 50ml">
+        <h5>
+            Caesar Dressing 50ml
+            <br>
+            <span>Prise :0.70 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2116_thumb.jpg?$Category_Desktop$"
+         alt="
+         4 Chicken Nuggets®">
+        <h5>
+            4 Chicken Nuggets®
+            <br>
+            <span>Prise :2.70 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/2060_thumb.jpg?$Category_Desktop$"
+         alt="Filet-o-Fish®">
+         <h5>Filet-o-Fish®
+            <br>
+            <span>Prise :3.70 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    <div>
+        <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7050_thumb.jpg?$Category_Desktop$"
+         alt="
+         Fanta 0,5l">
+         <h5>
+            Fanta 0,5l
+            <br>
+            <span>Prise :0.70 $</span>
+            <br>
+            <button>add to Cart <i class="bi bi-cart3"></i></button>
+        </h5>
+    </div>
+    </div>
+<!--End of lunch Menu-->
+<!--start of Dinner section-->
+<div id="dinner"
+ style="width: 70%;
+ float: right;
+ display: none;">
+
+    <img 
+    src="https://banner2.cleanpng.com/20180420/hdq/kisspng-architectural-engineering-advertising-business-fac-website-under-construction-5ada92fd3a5f01.2806450615242739172391.jpg"
+    style="width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    "
+    alt="in Proccessing">
+</div>
+<!--End of Dinner section-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
