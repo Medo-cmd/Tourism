@@ -12,7 +12,7 @@
 
     <title>DELTA</title>
 </head>
-<body>
+<body onload="hideMenu()">
     <!--NavBar-->
         
     <div class="topnav" id="myTopnav">
@@ -50,7 +50,7 @@
         All
         <i class="bi bi-chevron-double-right"></i>
     </button>
-    <button id="breakfast_btn" onclick="showBrakfast()">
+    <button id="breakfast_btn" onclick="showBreakfast()">
         Breakfast
         <i class="bi bi-chevron-double-right"></i>
     </button>
@@ -65,37 +65,44 @@
 </div>
 
 <!--Defult background section-->
-<div id="main_section" style="width: 70%;float: right; height: auto;">
+<div id="main_section">
     <img src="https://shop.mann-hummel.com/media/wysiwyg/MH_Restaurant_1.jpg" 
-    alt="background_foods" style="width: 100%;height:auto;"
-    >
-    <h3 style="text-align: center;
-    font-family: 'Amatic SC', cursive;
-font-family: 'Dancing Script', cursive;
-
-    ">
+    alt="background_foods"> 
+    <h3>
         Lots of little things can make a big difference. 
         We will tell you which suppliers we work with, 
         where our ingredients come from and how we ensure 
         that the best quality is served in our restaurants every day.
     </h3>
-    <button 
-    style="width: 20%;
-    background-color: rgb(209, 209, 7);
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    position: relative;
-    left: 40%;
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    ">
+    <button>
         Check it out!
     </button>
 </div>
+    <!--Countdown Clock-->
+    <div id="clockdiv">
+        <div>
+          <span class="days" id="day"></span>
+          <div class="smalltext">Days</div>
+        </div>
+        <div>
+          <span class="hours" id="hour"></span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div>
+          <span class="minutes" id="minute"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+          <span class="seconds" id="second"></span>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </div>
+        
+      <p id="demo"></p>
+      <!-- End of Countdown Clock-->
+
 <!--break fast Menu-->
-<div class="parent" id="breakfast" style="display: none;">
+<div class="parent" id="breakfast">
 <div>
     <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/1362_thumb.jpg?$Category_Desktop$" 
     alt="Butter_croassiant">
@@ -262,7 +269,7 @@ font-family: 'Dancing Script', cursive;
 
 <!--end of breakfast Menue-->
 <!--start of lunch Menu-->
-<div class="parent" id="lunch" style="display: none;">
+<div class="parent" id="lunch">
     <div>
         <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/5608_thumb.jpg?$Category_Desktop$" 
         alt="
@@ -437,8 +444,7 @@ font-family: 'Dancing Script', cursive;
     </div>
     <div>
         <img src="https://www.mcdonalds.com/is/image/content/dam/de/nutrition/items/icons/desktop/7050_thumb.jpg?$Category_Desktop$"
-         alt="
-         Fanta 0,5l">
+         alt="Fanta 0,5l">
          <h5>
             Fanta 0,5l
             <br>
@@ -450,18 +456,9 @@ font-family: 'Dancing Script', cursive;
     </div>
 <!--End of lunch Menu-->
 <!--start of Dinner section-->
-<div id="dinner"
- style="width: 70%;
- float: right;
- display: none;">
-
+<div id="dinner">
     <img 
     src="https://banner2.cleanpng.com/20180420/hdq/kisspng-architectural-engineering-advertising-business-fac-website-under-construction-5ada92fd3a5f01.2806450615242739172391.jpg"
-    style="width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    "
     alt="in Proccessing">
 </div>
 <!--End of Dinner section-->
